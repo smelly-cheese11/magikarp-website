@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    line-height: 1.3;
+    background: rgb(119, 151, 173);
+    color: azure;
+    font-weight: 400;
+    overflow: hidden;
+    font-family: 'Fjalla One', sans-serif;
+}
+.bg {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;    
+    background-image: url(image.png);
+    background-size: 50%;
+    background-position: 340px;
+    background-repeat: no-repeat;
+    background-color: #0051ff;
+    clip-path: circle(20% at 55% 50%);
+    z-index: -1;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.half {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.half.right {
+    margin-left: 50%;
+}
+a {
+    color: #0051ff;
+}
+h1 {
+    font-size: 4rem;   
+}
+h2 {
+    font-size: 3rem;
+}
+h1, h2{
+    font-weight: 700;
+}
+h4, h2, h3 {
+    font-size: 1.75rem;
+}
+h2::after {
+    content: '';
+    width: 5rem;
+    border-bottom: 5px dashed #00ff55;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+.dots {
+    display: block;
+    height: auto;
+    position: absolute;
+    z-index: -2;
+}
+.dots2 {
+    width: 40%;
+    top: -15%;
+    left: 6rem;
+}
+
+.link {
+    color: rgb(20, 220, 87);
+}
+blockquote {
+    font-style: italic;
+    padding: 2rem;
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 1rem
+}
+blockquote::after, blockquote::before {
+    content: '';
+    color: #1eed86;
+    font-size: 2rem;
+}
